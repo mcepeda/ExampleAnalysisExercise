@@ -16,7 +16,7 @@ The information skim is as follow:
 - Quantities saved per particle: pt, eta, phi, mass, pdgID, status, motherPdgID, motherStatus, numberOfDaughters, decay (for taus only), ptvisible (also only for taus, in development)
 - Pythia8 status:  
     - Electrons, Muons, and Neutrinos are saved only the final state (pythia status=1),  removing intermediate particles 
-    - Taus are saved just before decay (status=2), and the decay information is kept in a "decay" flag that encodes the tau decay (posible values of the flag: 0=1pi+,0pi0 1=1pi+,1pi0  2=1pi+,2pi0 3=3pi+,0pi0 4=3pi+,1pi0 5=other hadronic decay; 11=electron decay, 13=muon decay. To investigate tau decays: http://pdg.lbl.gov/2018/tables/rpp2018-sum-leptons.pdf) 
+    - Taus are saved just before decay (status=2), and the decay information is kept in a "decay" flag that encodes the tau decay mode (posible values of the flag, ignoring neutrinos: 0=1pi+,0pi0 1=1pi+,1pi0  2=1pi+,2pi0 3=3pi+,0pi0 4=3pi+,1pi0 5=other hadronic decay; 11=electron decay, 13=muon decay. To investigate tau decays: http://pdg.lbl.gov/2018/tables/rpp2018-sum-leptons.pdf) 
     - Bosons are saved in the first state in which they appear (typically pythia values 21-29)
     - What is this status code?: information about the hadronization status of a particle in pythia, from the parton-parton hard interaction products to the final products which are observed in the detector.  http://home.thep.lu.se/~torbjorn/pythia81html/ParticleProperties.html 
 - Event variables: event number, generator level weight for aMC@NLO
