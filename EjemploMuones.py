@@ -6,6 +6,8 @@ from ROOT import *
 # Cargamos el archivo root:
 f = TFile( 'fileHMuTau.root')
 
+gStyle.SetOptStat(0)
+
 # Cargamos el tree indicando el directorio y el nombre del tree:
 tree = f.Get("dumpGenInfo/Ntuple")
 
