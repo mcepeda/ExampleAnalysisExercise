@@ -25,13 +25,12 @@ The information skim is as follow:
 ## First exercises: plot muon pt from a HiggsToMuTau tree 
 
 - To Run:  **python ExampleMuons.py**
-- Two different ways to draw histograms from the information in a tree: tree->Draw, and a loop over the particles are compared
-- The result of the program is double: a canvas is plotted (all particles vs muons), and a root file containing the plots is produced 
+- This example compares two different ways to draw histograms from the information in a tree: using tree->Draw("variable"), or doing a loop over all the particles 
+- The result of the program is a png file, and a root file containing the histograms produced for later analysis
 
 Exercises: 
 - **Exercise 0**: get this program to run and inspect the results :)
-
-- **Exercise 1**: change the script to plot additional muon variables from of the ones available (see above for choices)
+- **Exercise 1**: change the script to plot additional muon variables from the list available (see above)
 - **Exercise 2**: plot also taus and electrons 
 - **Exercise 3**: what is the origin of the muons in the event? distinguish muons that are decayed from a tau and muons that aren't: are they similar? 
 - **Exercise 4**: what is the origin of the electrons in the event? distinguish electrons that are decayed from a tau and electrons that aren't: are they similar? 
