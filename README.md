@@ -31,7 +31,7 @@ The information skim is as follow:
 Exercises: 
 - **Exercise 0**: get this program to run and inspect the results :)
 
-- **Exercise 1**: plot different muon variables out of the ones available 
+- **Exercise 1**: change the script to plot additional muon variables from of the ones available (see above for choices)
 - **Exercise 2**: plot also taus and electrons 
 - **Exercise 3**: what is the origin of the muons in the event? distinguish muons that are decayed from a tau and muons that aren't: are they similar? 
 - **Exercise 4**: what is the origin of the electrons in the event? distinguish electrons that are decayed from a tau and electrons that aren't: are they similar? 
