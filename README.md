@@ -23,11 +23,10 @@ The information skim is as follow:
 
 
 ## First exercises: plot muon pt from a HiggsToMuTau tree 
-Run 
-python ExampleMuons.py 
 
---> Two different ways to draw histograms from the information in a tree: tree->Draw, and a loop over the particles are compared
---> The result of the program is double: a canvas is plotted (all particles vs muons), and a root file containing the plots is produced 
+- To Run:  **python ExampleMuons.py**
+- Two different ways to draw histograms from the information in a tree: tree->Draw, and a loop over the particles are compared
+-- The result of the program is double: a canvas is plotted (all particles vs muons), and a root file containing the plots is produced 
 
 **Exercise 0**: get this program to run and inspect the results :)
 
