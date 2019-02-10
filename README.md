@@ -28,13 +28,14 @@ The information skim is as follow:
 - Two different ways to draw histograms from the information in a tree: tree->Draw, and a loop over the particles are compared
 - The result of the program is double: a canvas is plotted (all particles vs muons), and a root file containing the plots is produced 
 
-**Exercise 0**: get this program to run and inspect the results :)
+Exercises: 
+- **Exercise 0**: get this program to run and inspect the results :)
 
-**Exercise 1**: plot different muon variables out of the ones available 
-**Exercise 2**: plot also taus and electrons 
-**Exercise 3**: what is the origin of the muons in the event? distinguish muons that are decayed from a tau and muons that aren't: are they similar? 
-**Exercise 4**: what is the origin of the electrons in the event? distinguish electrons that are decayed from a tau and electrons that aren't: are they similar? 
-**Exercise 5**: compare muons, taus and electrons : what can you say about the process you are studying? 
+- **Exercise 1**: plot different muon variables out of the ones available 
+- **Exercise 2**: plot also taus and electrons 
+- **Exercise 3**: what is the origin of the muons in the event? distinguish muons that are decayed from a tau and muons that aren't: are they similar? 
+- **Exercise 4**: what is the origin of the electrons in the event? distinguish electrons that are decayed from a tau and electrons that aren't: are they similar? 
+- **Exercise 5**: compare muons, taus and electrons : what can you say about the process you are studying? 
 
  
     
