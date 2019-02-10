@@ -5,7 +5,7 @@ Example analysis exercise, based on HMuTau generator studies
 
 ## Event trees structure
 
-Small trees of signal and background samples that are relevant for the Higgs to Muon Tau analysis.  The trees contain slimmed generator level information based on HEPMC. 
+Small trees of signal and background samples that are relevant for the Higgs to Muon Tau analysis.  The trees contain slimmed generator level information based on HepMC. 
 
 The information skim is as follow: 
 - All events are saved (no filtering), but not all the generator level particles produced in each event are kept.
