@@ -207,7 +207,8 @@ for event in tree: # loop sobre los sucesos del tree
                         MM_deltaEtaMu1Mu2.Fill(abs(event.eta.at(muonindex_1)-event.eta.at(muonindex_2)))
 
 			# coll mass ?
-			taufraction=event.pt.at(muonindex_2)/ ( event.pt.at(muonindex_2) +met_et)
+                        ptnu = abs(met_et*math.cos(normDPhi(met_phi -event.phi.at(muonindex_2))))
+			taufraction=event.pt.at(muonindex_2)/ ( event.pt.at(muonindex_2)+ptnu)
 			CollinearMassDiMuon.Fill(mass/math.sqrt(taufraction)) 
 
 		elif (nhadtaus==1) :
@@ -223,7 +224,8 @@ for event in tree: # loop sobre los sucesos del tree
 
                         # coll mass ?
 			if tau_pt_visible>0 :
-	                        taufraction=tau_pt_visible /  (tau_pt_visible+met_et)
+                                ptnu = abs(met_et*math.cos(normDPhi(met_phi-tau_phi)))
+                                taufraction=tau_pt_visible /  (tau_pt_visible+ptnu)
         	                CollinearMassMuonTau.Fill(mass2/math.sqrt(taufraction))
 			else :
 				CollinearMassMuonTau.Fill(0)
@@ -247,7 +249,8 @@ for event in tree: # loop sobre los sucesos del tree
                         ME_deltaPhiMuEle.Fill(normDPhi(event.phi.at(muonindex_1)-event.phi.at(electronindex)))
                         ME_deltaEtaMuEle.Fill(abs(event.eta.at(muonindex_1)-event.eta.at(electronindex)))
                         # coll mass ?
-                        taufraction=electron_pt/ ( electron_pt +met_et)
+                        ptnu = abs(met_et*math.cos(normDPhi(met_phi-electron_phi)))
+                        taufraction=electron_pt/ ( electron_pt +ptnu)
                         CollinearMassMuonElectron.Fill(mass/math.sqrt(taufraction))
 
 
